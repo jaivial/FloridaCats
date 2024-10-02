@@ -1,0 +1,828 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, #b2d1ef, #6b96c1);
+    font-family: Assistant, sans-serif;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: Assistant, sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0px;
+}
+    
+    #body_index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-family: Assistant, sans-serif;
+        padding: 0px;
+        margin: 0px;
+    }
+
+.container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+
+
+.registro {
+    color: white;
+    background: #136a8a;
+    background:
+        -webkit-linear-gradient(to right, #783f26, #8a5413);
+    background:
+        linear-gradient(to right, #a36736, #8a2513);
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow:
+        0px 2px 10px rgba(0, 0, 0, 0.2),
+        0px 10px 20px rgba(0, 0, 0, 0.3),
+        0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column wrap;
+align-items: center;
+
+}
+
+.registro .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.registro .head .titulo {
+    font-size: 2.2em;
+    margin: 10px 0px;
+}
+
+.registro .head .mensaje_registro {
+    font-size: 1.2em;
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.registro .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 0px 100px;
+}
+
+.registro .form input[type=text] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.registro .form input[type=password] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.registro .form input[type=submit] {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.registro .form input[type=reset] {
+    margin-top: 10px;
+}
+
+.registro .form input[type=text].text {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    width: max-content;
+}
+
+.registro .form .text::placeholder {
+    color: #D3D3D3;
+}
+
+
+.registro .form input[type=password].password {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: max-content;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.registro .form .password::placeholder {
+    color: #D3D3D3;
+}
+
+.registro .form .btn-login {
+    background: none;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 5px 2em;
+    transition: 0.5s;
+}
+
+.registro .form .btn-login:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+}
+
+.registro .forgot {
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.login {
+    color: white;
+    background: #136a8a;
+    background:
+        -webkit-linear-gradient(to right, #267871, #136a8a);
+    background:
+        linear-gradient(to right, #267871, #136a8a);
+    margin-top: 100px;
+    margin: auto;
+    box-shadow:
+        0px 2px 10px rgba(0, 0, 0, 0.2),
+        0px 10px 20px rgba(0, 0, 0, 0.3),
+        0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.login .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.login .head .login_mensaje {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center;
+}
+.login .head .company {
+    font-size: 2.2em;
+    margin: 10px 40px;
+}
+
+.login .msg {
+    text-align: center;
+}
+
+.login .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login .form input[type=text].text {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.login .form .text::placeholder {
+    color: #D3D3D3;
+}
+
+.login .form input[type=password].password {
+    border: none;
+    background: none;
+    box-shadow: 0px 2px 0px 0px white;
+    width: 100%;
+    color: white;
+    font-size: 1em;
+    outline: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.login .form .password::placeholder {
+    color: #D3D3D3;
+}
+
+.login .form .btn-login {
+    background: none;
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 0px 2px white;
+    border-radius: 3px;
+    padding: 5px 2em;
+    transition: 0.5s;
+}
+
+.login .form .btn-login:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+}
+
+.login .forgot {
+    text-decoration: none;
+    color: white;
+    float: right;
+}
+
+.registro_exito {
+    color: white;
+    background: #136a8a;
+    background:
+        -webkit-linear-gradient(to right, #3faa51, #05bc30);
+    background:
+        linear-gradient(to right, #2e7239, #41b421);
+    margin: auto;
+    margin-top: 50px;
+    box-shadow:
+        0px 2px 10px rgba(0, 0, 0, 0.2),
+        0px 10px 20px rgba(0, 0, 0, 0.3),
+        0px 30px 60px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro_exito h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* INDEX.PHP CON USUARIO YA INICIADO SESIÓN */
+
+.headerindex {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+}
+
+.headerindex a p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.headerindex a {
+    text-decoration: none;
+    color: black;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.headerindex a:hover {
+    background: white;
+    color: dimgray;
+    transition: 0.5s;
+}
+
+.headerindex .cuenta a img {
+    height: 25px;
+    margin-right: 10px;
+}
+
+
+
+.headerindex .cuenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header {
+    color: white;
+    font-size: 2em;
+    font-family: Assistant, sans-serif;
+    text-align: center;
+    height: 200px;
+}
+
+.header .floridalogo {
+    height: 75%;
+    margin-left: 200px;
+}
+
+.header h1 {
+    font-size: 50px;
+    word-spacing: 25px;
+    font-family: Assistant, sans-serif;
+}
+
+.carrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.carrito p {
+    font-size: 20px;
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+.carrito .carritotexto {
+    padding-right: 0px;
+}
+
+
+.carrito .carritolink {
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    height: 100%;
+    text-decoration: none;
+    color: black
+}
+
+.carrito .carritolink:hover {
+    background: black;
+    color: white;
+    transition: 0.5s;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.carrito .carritolink:hover p {
+    color: white;   
+    transition: 0.5s;
+}
+
+.carrito .carritolink:hover img {
+    filter: invert(100%); 
+    transition: 0.5s;
+}
+
+.carrito img {
+    height: 40px;
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#animales {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 50px;
+}
+
+
+
+.animal {
+    flex-basis: calc(33.333333% - 50px);
+    width: 30%;
+    margin-bottom: 20px;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.fotoanimal {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+}
+
+
+.descripcionDiv {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pTipo {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pSexo {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.pColor  {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.botonSubmit {
+    margin: 0px 0 0 0;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow:
+        0px 2px 5px rgba(0, 0, 0, 0.2),
+        0px 3px 5px rgba(0, 0, 0, 0.3),
+        0px 3px 10px 1px rgba(0, 0, 0, 0.5);
+    color: black;
+    font-size: 17px;
+}
+
+.botonSubmit:hover {
+    padding: 22px 32px;
+    background-color: black;
+    transition: 0.2s;
+    cursor:pointer;
+    color: white;
+    font-size: 19px;
+}
+
+
+
+
+
+  .filtro {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+.containerfiltro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.containerfiltro p {
+    font-family: Assistant, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.divOrden {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.containerinformacionsuario {
+    width: 80%;
+    background: linear-gradient(150deg, white, rgba(176, 166, 166, 0.626));
+    border-radius: 30px;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    margin: 20px 0px;
+}
+
+.containerinformacionsuario .titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Assistant, sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+.containerinformacionsuario .informacionusuario {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.containerinformacionsuario .informacionusuario  p {
+    color: black;
+    font-family: Assistant, sans-serif;
+    font-size: 20px;   
+}
+
+
+
+.tablapedidos {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tablapedidos {
+    border-collapse: collapse;
+    width: 90%;
+    
+}
+
+#tablapedidos td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;   
+}
+
+
+#tablapedidos tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgba(128, 128, 128, 0.25);
+    border-radius: 30px;
+    height: 100px;
+}
+
+
+#tablapedidos tr th {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 100%;
+    color: white;   
+    padding: 15px 0px;
+}
+
+#tablapedidos td p {
+    font-size: 22px;
+    font-family: Assistant, sans-serif;
+    text-transform: uppercase;   
+}
+
+.tablacarrito {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tablacarrito {
+    border-collapse: collapse;
+    width: 90%;
+}
+
+#tablacarrito tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#tablacarrito th {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    width: 100%;
+    color: white;   
+    padding: 15px 0px;
+}
+
+.preciototal {
+    padding: 10px 50px;
+    margin-top: 30px;
+    font-size: 25px;
+
+}
+
+.realizarcompra {
+    background-color: white;
+    border: 3px solid black;
+    padding: 15px 40px;
+    border-radius: 30px;
+   
+    box-shadow: 3px 3px 10px black;
+    color: black;
+    font-family: Assistant, sans-serif;   
+    font-size: 20px;
+}
+
+.realizarcompra:hover {
+    background-color: black;
+    padding: 18px 43px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+
+}
+
+.fila {
+    width: 90%;
+    height: 100px;
+    background-color: yellow;
+}
+
+
+
+#tablacarrito tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgba(128, 128, 128, 0.25);
+    border-radius: 30px;
+
+}
+
+#tablacarrito td {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;    
+}
+
+#tablacarrito td p {
+    font-size: 22px;
+    font-family: Assistant, sans-serif;
+    text-transform: uppercase;   
+}
+
+#mensajecesta {
+    background-color: transparent;
+}
+
+#formanimal {
+    display: flex;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    margin-top: 30px;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.footercontainer h1 {
+    color: white;
+    font-size: 22px;
+    font-family: Assistant, sans-serif;
+}
+
+.logocontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+}
+
+.logocontainer h1 {
+    color: white;
+    font-size: 22px;
+    font-family: Assistant, sans-serif;
+    
+}
+
+.logocontainer img {
+    height: 100%;   
+}
+
+#body_index .formularioinsertar {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#body_index .formularioinsertar .form-group {
+
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#body_index .formularioinsertar .form-group label {
+    margin-right: 10px;
+    font-family: Assistant, sans-serif;;
+}
+
+#body_index .formularioinsertar .form-group input {
+    width: 100%;
+}
+
+#body_index .formularioinsertar .form-group-submit {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+#body_index .formularioinsertar .form-group-submit input {
+    width: 100%;
+}

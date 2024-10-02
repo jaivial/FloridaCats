@@ -1,0 +1,38 @@
+Hola, estás leyendo las instrucciones de uso de la aplicación web Florida Cats.
+
+Florida Cats se aloja en una base de datos remota, por lo que no es necesario su instalación en su máquina personal.
+Las credenciales de acceso para la base de datos remota son:
+000webhost.com (esta es la web que me proporciona el host)
+DB name: id20914177_gatos
+DB user: id20914177_toni
+DB host: localhost
+DB password: 0+TZ9-3^9?1$>0t-
+
+En Florida Cats solo se puede acceder a la tienda iniciando sesión con tu cuenta de usuario. 
+Si no tienes cuenta puedes registrarte introduciendo tus datos en el formulario que aparece cuando 
+ingresas un usuario o contraseña que no existen en la base de datos.
+
+Si ya te has regitrado y has iniciado sesión entrarás en la página inicial de la tienda.
+Verás que ya hay 10 gatos disponibles para comprar.
+Si clickas en 'agregar al carrito' verás que el recuadro de arriba a la derecha se actualiza dinámicamente con
+el número de ítems y la suma del precio de todos los items que vayas agregando.
+Si clickas en el boton 'carrito' te redirigirá a tu cesta de la compra, dónde aparece un desglose de los items que
+has ido añadiendo a tu cesta de la compra. Si te has equivocado en algún gato, clicka en 'restablecer' y el carrito
+se vaciará como puedes observar en el mensaje que aparece ahora en pantalla. Vuelve a pulsar el boton de inicio para volver 
+a agregar gatos a tu cesta de la compra. 
+Accede otra vez al carrito y esta vez 'realiza la compra'. Verás que la cesta de la compra se vacía, pero si ahora clickas
+en el botón 'cuenta' te aparecerán tus datos de usuario y un historial de las compras realizadas.
+
+Si eres curioso y cierras tu sesion con elementos en el carrito, verás que se mantienen en el carrito cuando vuelvas a inciar tu sesion.
+Si inicias sesión con otro usuario distinto verás que nada es igual, ya que todos estos procesos son individuales para cada usuario.
+
+Ahora si accedes con el usuario 'javial' y la contraseña '12' verás que se desbloquea en el menú de arriba el botón 'configuracion'.
+Si clickas en configuracion accedes a una pantalla donde puedes agregar gatos y subir imagenes desde tu ordenadro.
+Solo se puede acceder con estas credenciales para evitar que otros usuarios suban cosas inapropiadas.
+
+
+******************************************************************************************************************
+** Si quieres iniciar desde htdocs simplemente copia y pega la carpeta WEB en 'htdocs'
+Abre la ruta localhost/WEB
+No es necesario ejecutar ninguna consulta SQL para crear la base de datos, las tablas o insertar los gatos ya que está
+programado para que todo se haga automático cuando se instala desde la máquina local. **
