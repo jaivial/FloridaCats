@@ -15,23 +15,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $tipo = $_POST['raza'];
         $color = $_POST['color'];
         $sexo = $_POST['sexo'];
-        
+
         if ($sexo === 'Macho') {
             $sexo = 1;
         } elseif ($sexo === 'Hembra') {
             $sexo = 0;
         }
-        
+
         $precio = $_POST['precio'];
         $foto = file_get_contents($_FILES['imagen']['tmp_name']);
 
         mysqli_report(MYSQLI_REPORT_ERROR);
         require("usaGATOS.php");
         $consulta = "INSERT INTO animal (nombre, tipo, color, sexo, precio, foto) VALUES (?, ?, ?, ?, ?, ?)";
-        
+
         $stmt = $mysqli->prepare($consulta);
         $stmt->bind_param("ssssds", $nombre, $tipo, $color, $sexo, $precio, $foto);
-        
+
         if (!$stmt->execute()) {
             echo "Lo sentimos. La aplicación falló.<br>";
             echo "Error en $consulta <br>";
@@ -41,10 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             $stmt->close();
             $mysqli->close();
-            header ('Location: indexlogin.php');
+            header('Location: indexlogin.php');
         }
-        
-       
     }
 }
 ?>
@@ -91,27 +89,27 @@ if ($resultado->num_rows > 0) {
 <?php
 if ($num == 0) {
 ?>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var tabla = document.getElementById('tablacarro');
-            tabla.style.display = "none";
-            var titulo = document.getElementById('titulo');
-            titulo.style.flexDirection = "column";
-            var mensajecesta = document.createElement('h1');
-            mensajecesta.id = 'mensajecesta';
-            mensajecesta.textContent = 'Tu cesta está vacía';
-            titulo.appendChild(mensajecesta);
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var tabla = document.getElementById('tablacarro');
+    tabla.style.display = "none";
+    var titulo = document.getElementById('titulo');
+    titulo.style.flexDirection = "column";
+    var mensajecesta = document.createElement('h1');
+    mensajecesta.id = 'mensajecesta';
+    mensajecesta.textContent = 'Tu cesta está vacía';
+    titulo.appendChild(mensajecesta);
 
-            var realizarcompra = document.getElementById('realizarcompra');
-            realizarcompra.style.display = "none";
+    var realizarcompra = document.getElementById('realizarcompra');
+    realizarcompra.style.display = "none";
 
-            var restablecer = document.getElementById('restablecer');
-            restablecer.style.display = "none";
+    var restablecer = document.getElementById('restablecer');
+    restablecer.style.display = "none";
 
-            var preciototal = document.getElementById('preciototal');
-            preciototal.style.display = "none";
-        });
-    </script>
+    var preciototal = document.getElementById('preciototal');
+    preciototal.style.display = "none";
+});
+</script>
 <?php
 }
 ?>
@@ -148,15 +146,15 @@ if ($preciototal === NULL) {
 if (isset($_COOKIE['usuario']) && isset($_COOKIE['password'])) {
     if ($_COOKIE['usuario'] == 'javial' && $_COOKIE['password'] == '12') {
 ?>
-        <script>
-            window.addEventListener('DOMContentLoaded', function() {
+<script>
+window.addEventListener('DOMContentLoaded', function() {
 
-                var configuracionbutton = document.getElementById('configuracionbutton');
-                configuracionbutton.style.display = "flex";
+    var configuracionbutton = document.getElementById('configuracionbutton');
+    configuracionbutton.style.display = "flex";
 
 
-            });
-        </script>
+});
+</script>
 <?php
     }
 }
@@ -201,7 +199,8 @@ if (isset($_POST['upload'])) {
 <header class="headerindex">
     <div class="cuenta">
         <a href="configuracion.php" id="configuracionbutton" style="display: none;">
-            <img src="img/configuracion.png" alt="" class="homelogo" style="height:30px; margin-left: 0px; margin-right: 10px;">
+            <img src="img/configuracion.png" alt="" class="homelogo"
+                style="height:30px; margin-left: 0px; margin-right: 10px;">
             <p>Configuracion</p>
         </a>
         <a href="indexlogin.php" style="flex-direction: row-reverse;">
@@ -244,7 +243,7 @@ if (isset($_POST['upload'])) {
     <div class="containerinformacionsuario">
         <div class="titulo" id='titulo'>
             <h1>CONFIGURACION</h1>
-            
+
         </div>
         <h1>Añade un gato</h1>
 
